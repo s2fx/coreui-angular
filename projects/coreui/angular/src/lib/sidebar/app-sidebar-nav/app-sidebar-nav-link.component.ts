@@ -58,4 +58,13 @@ export class AppSidebarNavLinkComponent implements OnInit {
       this.renderer.removeClass(this.document.body, 'sidebar-show');
     }
   }
+
+  public getQueryParams() {
+    return this.link.queryParams ? this.link.queryParams : {};
+  }
+
+  public getActiveOptions() {
+    return this.link.activeOptions ? this.link.activeOptions : '';
+  }
+
 }
